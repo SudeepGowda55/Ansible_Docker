@@ -1,7 +1,7 @@
 - hosts: all
   tasks:
    - name: start container
-     shell: docker container run -d --name webappcontainer111 -p 8080:8080 sudeepgowda55/webapp:latest
+     shell: docker container run -d --name webappcontainer111 -p 8080:8080 sudeepgowda55/webapp
   #  - name: remove container
   #    shell: docker container rm devopsProjectaa
   #  - name: remove docker image
