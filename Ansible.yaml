@@ -1,10 +1,10 @@
 - hosts: all
   tasks:
+   - name: stop container
+     shell: docker stop webappcontainer111 
+   - name: remove container
+     shell: docker rm webappcontainer111
+   - name: remove docker image
+     shell: docker rmi sudeepgowda55/webapp
    - name: start container
      shell: docker container run -d --name webappcontainer111 -p 8080:80 sudeepgowda55/webapp
-  #  - name: remove container
-  #    shell: docker container rm devopsProjectaa
-  #  - name: remove docker image
-  #    shell: docker image rmi devopsprojectaa
-  #  - name: create new container
-  #    shell: docker container run -itd --name devopsProjectaa -p 7000:8080 vikashashoke/docker_image
