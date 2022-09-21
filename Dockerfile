@@ -12,7 +12,6 @@ RUN rm -rf leadmark leadmark.zip
 EXPOSE 8080
 CMD [ "http-server", "-p", "8080" ]
 
-
 # docker build -t <tag-name> .
 
 # docker container run -d --name <container-name> -p 8080:8080 <docker-image-name/docker-image-tag-name>
